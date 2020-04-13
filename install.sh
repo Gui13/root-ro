@@ -35,11 +35,11 @@ else
 fi
 
 echo Setting up maintenance scripts in /root...
-cp reboot-to-readonly-mode.sh /root/reboot-to-readonly-mode.sh
-chmod +x /root/reboot-to-readonly-mode.sh
+cp reboot-to-readonly-mode.sh /usr/local/bin/reboot-ro
+chmod +x /usr/local/bin/reboot-ro
 
-cp reboot-to-writable-mode.sh /root/reboot-to-writable-mode.sh
-chmod +x /root/reboot-to-writable-mode.sh
+cp reboot-to-writable-mode.sh /usr/local/bin/reboot-rw
+chmod +x /usr/local/bin/reboot-rw
 
 echo Setting up initramfs-tools scripts...
 cp etc/initramfs-tools/scripts/init-bottom/root-ro /etc/initramfs-tools/scripts/init-bottom/root-ro
